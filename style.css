@@ -43,7 +43,7 @@ body {
 #hero {
   padding-top: 90px; /* Adjust based on navbar height */
   text-align: center;
-  background-color:white; /* optional background */
+  background-color:white; 
 }
 
 .hero-logo {
@@ -59,12 +59,13 @@ body {
   color: #000;
   background-image: none;
 }
+/* optional background 
 #clients {
   background-image: url('https://www.shutterstock.com/shutterstock/photos/2424450089/display_1500/stock-photo-happy-middle-aged-business-woman-executive-ceo-leader-discussing-project-management-planning-2424450089.jpg');
 }
 #contact {
   background-image: url('https://www.shutterstock.com/shutterstock/photos/2493043863/display_1500/stock-photo-concept-of-contact-us-customer-support-service-icon-contact-us-or-customer-support-hotline-2493043863.jpg');
-}
+} */
 .overlay {
   background: rgba(0, 0, 0, 0.6);
   padding: 40px;
