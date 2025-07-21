@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hardskello | Staffing Solutions</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -38,7 +40,7 @@
   </div>//
 
  -->
-<section id="hero">
+<section id="hero"  class="mt-0 pt-0">
   <img src="images/final websitelogo.png" alt="Hardskello Logo" class="hero-logo" />
 </section>
 
@@ -162,47 +164,95 @@
   </div>
 </section>
  -->
+ <!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<!-- About Section -->
 <section id="about" class="py-5 bg-light">
   <div class="container">
-    <h2 class="text-center mb-4 text-dark">About Hardskello</h2>
+    <h2 class="text-center mb-4 text-dark fw-bold">About Hardskello</h2>
     
-    <p class="lead text-center text-muted">
-      Hardskello is a workforce initiative by Revive Business Solutions, proudly serving the industrial backbone of Illinois. Built on the values of <strong>grit, reliability, and hard work</strong>, we specialize in staffing blue-collar roles across the state’s most vital sectors — from manufacturing floors in Rockford to logistics hubs in Joliet, to construction sites in Chicago and beyond.
-    </p>
-
-    <p class="text-muted">
-      We are not just recruiters — we’re <strong>partners to industries</strong> that move, build, and grow America. Whether you need CNC machinists in Peoria, forklift operators in Aurora, warehouse crews in Elgin, or maintenance techs in Decatur, Hardskello delivers dependable talent when and where it counts.
-    </p>
-
-    <div class="row mt-5">
-      <div class="col-md-6">
-        <h4 class="text-primary">Our Focus Industries in Illinois:</h4>
-        <ul>
-          <li><strong>Manufacturing:</strong> Metal fabrication, automotive, food processing, plastic injection molding</li>
-          <li><strong>Logistics & Warehousing:</strong> Distribution centers, cold storage, e-commerce fulfillment</li>
-          <li><strong>Construction & Trades:</strong> General labor, HVAC, plumbing, electrical, roadwork</li>
-          <li><strong>Industrial Maintenance & Operations:</strong> Technicians, millwrights, machine operators</li>
-        </ul>
-      </div>
-      
-      <div class="col-md-6">
-        <h4 class="text-primary">What Sets Us Apart:</h4>
-        <ul>
-          <li><strong>Local Knowledge:</strong> We know Illinois — its labor markets, union rules, and industrial zones.</li>
-          <li><strong>Fast Turnaround:</strong> We staff with urgency while never compromising on worker quality.</li>
-          <li><strong>Workforce Ready:</strong> All candidates are screened, skilled, and safety-aware.</li>
-        </ul>
+    <div class="row mb-5 fade-in">
+      <div class="col-md-12">
+        <p class="lead text-center text-muted">
+          <i class="bi bi-people-fill text-primary me-2"></i>
+          Hardskello is a workforce initiative by Revive Business Solutions, proudly serving the industrial backbone of Illinois.
+          Built on the values of <strong>grit, reliability, and hard work</strong>, we specialize in staffing blue-collar roles
+          across the state’s most vital sectors — from manufacturing floors in Rockford to logistics hubs in Joliet, to
+          construction sites in Chicago and beyond.
+        </p>
+        <p class="text-muted text-center">
+          <i class="bi bi-patch-check-fill text-success me-2"></i>
+          We are not just recruiters — we’re <strong>partners to industries</strong> that move, build, and grow America. Whether you need CNC machinists in Peoria, forklift operators in Aurora, warehouse crews in Elgin, or maintenance techs in Decatur, Hardskello delivers dependable talent when and where it counts.
+        </p>
       </div>
     </div>
 
-    <div class="mt-5">
-      <h4 class="text-primary">Our Mission</h4>
-      <p class="text-muted">
+    <div class="row g-4 fade-in">
+      <div class="col-md-6">
+        <div class="bg-white shadow-sm p-4 rounded h-100">
+          <h4 class="text-primary fw-semibold mb-3">
+            <i class="bi bi-diagram-3-fill me-2 text-warning"></i> Our Focus Industries in Illinois
+          </h4>
+          <ul class="text-muted mb-0">
+            <li><strong>Manufacturing:</strong> Metal fabrication, automotive, food processing, plastic injection molding</li>
+            <li><strong>Logistics & Warehousing:</strong> Distribution centers, cold storage, e-commerce fulfillment</li>
+            <li><strong>Construction & Trades:</strong> General labor, HVAC, plumbing, electrical, roadwork</li>
+            <li><strong>Industrial Maintenance & Operations:</strong> Technicians, millwrights, machine operators</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="bg-white shadow-sm p-4 rounded h-100">
+          <h4 class="text-primary fw-semibold mb-3">
+            <i class="bi bi-stars text-success me-2"></i> What Sets Us Apart
+          </h4>
+          <ul class="text-muted mb-0">
+            <li><strong>Local Knowledge:</strong> We know Illinois — its labor markets, union rules, and industrial zones.</li>
+            <li><strong>Fast Turnaround:</strong> We staff with urgency while never compromising on worker quality.</li>
+            <li><strong>Workforce Ready:</strong> All candidates are screened, skilled, and safety-aware.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5 fade-in">
+      <h4 class="text-primary fw-semibold">
+        <i class="bi bi-bullseye text-danger me-2"></i> Our Mission
+      </h4>
+      <p class="text-muted fs-5">
         To uplift blue-collar workers and power the pulse of Illinois industry with reliable staffing solutions that work as hard as you do.
       </p>
     </div>
   </div>
 </section>
+
+<!-- Animation CSS -->
+<style>
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Optional: Delay fade-ins by section */
+  .fade-in:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+
+  .fade-in:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+</style>
+
 
 
 
@@ -229,12 +279,13 @@
           <p>Deploy skilled professionals on contract or trial-to-hire basis with payroll flexibility.</p>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="p-4 bg-dark border rounded shadow-sm client-card h-100">
-          <h4 class="text-warning">Payroll & Compliance</h4>
-          <p>Manage salaries, PF/ESI, tax deductions, and labor law compliance under one roof.</p>
-        </div>
-      </div>
+<div class="col-md-6">
+  <div class="p-4 bg-dark border rounded shadow-sm client-card h-100">
+    <h4 class="text-warning">Payroll & Benefits Administration</h4>
+    <p>We handle end-to-end U.S. payroll processing including tax withholdings, W-2s, workers’ compensation, and optional benefits like health and retirement plans.</p>
+  </div>
+</div>
+
       <div class="col-md-6">
         <div class="p-4 bg-dark border rounded shadow-sm client-card h-100">
           <h4 class="text-warning">Executive Search</h4>
@@ -313,7 +364,7 @@
         Schaumburg,<br>
         Illinois,<br>
         US state 60173</p>
-        <p class="text-center">Reach out via email at <a href="email.seatsandspace.com" class="text-warning">email.seatsandspace.com</a></p>
+        <p class="text-center">Reach out via email at <a href="team@hardskello.com" class="text-warning">email.seatsandspace.com</a></p>
         <strong>Phone:</strong> (847) 517-8415</p>
         <div class="d-flex justify-content-center mt-4">
           <a href="#" class="me-3"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="30"></a>

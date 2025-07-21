@@ -23,12 +23,13 @@ body {
   background-position: center;
   color: #fff;
 }
+/*
 #hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full screen */
-  background-color: #fff; /* Or use your brand background */
+  height: 100vh; 
+  background-color: #fff; 
   padding: 0;
   margin: 0;
   text-align: center;
@@ -38,7 +39,17 @@ body {
   max-width: 110%;
   height: auto;
   object-fit: contain;
+}*/
+#hero {
+  padding-top: 90px; /* Adjust based on navbar height */
+  text-align: center;
+  background-color:white; /* optional background */
 }
+
+.hero-logo {
+  max-width: 200px;
+}
+
 .text-center mb-5{
     color: #ffc107;
 }
@@ -67,8 +78,8 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 footer {
-  background-color: #000;
-  color: #fff;
+  background-color: #111;
+  color: #ccc;
   padding: 20px 0;
   text-align: center;
 }
